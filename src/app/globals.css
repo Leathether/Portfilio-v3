@@ -26,6 +26,11 @@ body {
   }
 }
 
-.text-border {
+.text-border-5xl {
+  text-shadow: -.2rem 0 black, 0 .2rem black, .2rem 0 black, 0 -.2rem black;
+}
+
+
+.text-border-l {
   text-shadow: -.1rem 0 black, 0 .1rem black, .1rem 0 black, 0 -.1rem black;
 }

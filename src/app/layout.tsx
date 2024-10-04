@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Image from "next/image"
-import Portrait from "../public/portrait.jpg"
+import Link from "next/link"
+import Image from "next/image";
+import Portrait from "../public/portrait.jpg";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
   title: "Portfolio",
   description: "This is by Peter Magenheim, and it is version 3 of his portfolio",
   keywords:"SoftwareDeveloper, Programmer, Software, SoftwareEngineer, Coder",
+  icons:"../public/portrait.jpg"
 };
 
 const buttonCSS:string = "w-[15.5vw] h-14 m-4 bg-slate-400 text-black font-black text-2xl rounded-xl"
@@ -30,6 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
