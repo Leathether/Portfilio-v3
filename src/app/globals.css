@@ -25,3 +25,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.text-border {
+  text-shadow: -.1rem 0 black, 0 .1rem black, .1rem 0 black, 0 -.1rem black;
+}
