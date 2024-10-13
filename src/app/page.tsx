@@ -3,13 +3,15 @@ import Image from "next/image";
 export default function Home() {
   const text5xlClass:string = "text-5xl text-white font-black m-8 text-border-5xl"
   const textLClass:string = "text-l text-black mt-16"
-  const descriptionClass:string = "bg-blue-500 h-[60vh] w-[28vw] flex"
-  const contentClass:string = "bg-slate-300 w-[72vw] h-[60vh] p-20"
+  const descriptionClass:string = "bg-blue-500 h-auto w-[28vw] flex"
+  const contentClass:string = "bg-slate-300 w-[72vw] h-auto p-20"
   const skillsTextClass:string = "mt-0 text-l text-black mt-4"
-  const 
+  const skillsSectionImageClass:string = "flex flex-row flex-wrap"
+  const skillsImageClass:string = "h-[7vw] w-[7vw] rounded-xl"
+  const skillsImageStyle:Object = {height: 'auto', objectFit: 'contain', position: 'relative'}
   return (
     <>
-      <header className="w-full flex flex-row">
+      <header className="w-full flex flex-row h-auto">
         <section className={descriptionClass}>
           <h1 className={text5xlClass}>Overview</h1>
         </section>
@@ -18,6 +20,10 @@ export default function Home() {
           
           <p className={textLClass}>Skills:</p>
           <p className={skillsTextClass}>JavaScript, Typescript, App Script, React JS, Next JS</p>
+          <section className={skillsSectionImageClass}>
+            <Image src="/javascriptLogo.png" alt="JavaScript Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
+            <Image src="/typescriptLogo.svg" alt="TypeScript Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
+          </section>
           <p className={skillsTextClass}>HTML/CSS, Tailwind CSS, Material UI</p>
           <p className={skillsTextClass}>Python, Numpy, Pandas, Matplotlib, Open AI API, Gemini API, LLAMA 2 Local, Pinecone, Turtle, Pygame</p>
           <p className={skillsTextClass}>Windows CMD, Linux Terminal, Git, npm, pip, pyenv</p>
