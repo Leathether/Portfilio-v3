@@ -6,8 +6,8 @@ export default function Home() {
   const descriptionClass:string = "bg-blue-500 h-auto w-[28vw] flex"
   const contentClass:string = "bg-slate-300 w-[72vw] h-auto p-20"
   const skillsTextClass:string = "mt-0 text-l text-black mt-4"
-  const skillsSectionImageClass:string = "flex flex-row flex-wrap"
-  const skillsImageClass:string = "h-[7vw] w-[7vw] rounded-xl"
+  const skillsSectionImageClass:string = "flex flex-row flex-wrap justify-left"
+  const skillsImageClass:string = "h-[5rem] w-[5rem] rounded-[1rem] m-[1rem] bg-white"
   const skillsImageStyle:Object = {height: 'auto', objectFit: 'contain', position: 'relative'}
   return (
     <>
@@ -20,17 +20,35 @@ export default function Home() {
           
           <p className={textLClass}>Skills:</p>
           <p className={skillsTextClass}>JavaScript, Typescript, App Script, React JS, Next JS</p>
+          <p className={skillsTextClass}>HTML/CSS, Tailwind CSS, Material UI</p>
           <section className={skillsSectionImageClass}>
             <Image src="/javascriptLogo.png" alt="JavaScript Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
-            <Image src="/typescriptLogo.svg" alt="TypeScript Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
+            <Image src="/typescriptLogo.png" alt="TypeScript Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
+            <Image src="/appscriptLogo.png" alt="AppScript Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
+            <Image src="/reactLogo.png" alt="React Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
+            <Image src="/nextjsLogo.svg" alt="Next JS Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
+            <Image src="/htmlLogo.png" alt="HTML Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
+            <Image src="/cssLogo.svg" alt="CSS Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
+            <Image src="/tailwindLogo.png" alt="Tailwind CSS Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
+            <Image src="/materialuiLogo.png" alt="Material UI Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
+            <Image src="/pythonLogo.png" alt="Python Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
+            <Image src="/numpyLogo.png" alt="Numpy Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
+            <Image src="/openaiLogo.png" alt="Open AI Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
+            <Image src="/geminiLogo.jpeg" alt="Gemini AI Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
+            <Image src="/groqLogo.png" alt="Groq AI Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
+            <Image src="/llamaLogo.webp" alt="Llama Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
+            <Image src="/pineconeLogo.png" alt="Pinecone Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
+            <Image src="/pygameLogo.png" alt="Pygame Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
+            <Image src="/flaskapiLogo.png" alt="Flask API Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
           </section>
-          <p className={skillsTextClass}>HTML/CSS, Tailwind CSS, Material UI</p>
-          <p className={skillsTextClass}>Python, Numpy, Pandas, Matplotlib, Open AI API, Gemini API, LLAMA 2 Local, Pinecone, Turtle, Pygame</p>
+          
+          <section className={skillsSectionImageClass}>
+            
+            </section>
+          <p className={skillsTextClass}>Python, Numpy, Pandas, Matplotlib, Open AI API, Gemini API, Groq API, LLAMA 2 Local, Pinecone, Turtle, Pygame, Flask API</p>
           <p className={skillsTextClass}>Windows CMD, Linux Terminal, Git, npm, pip, pyenv</p>
-        </section>
 
-        <section></section>
-        <section></section>
+        </section>
       </header>
     </>
   )
