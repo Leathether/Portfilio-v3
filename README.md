@@ -6,6 +6,8 @@ Things to do for project:
 a) added all of the image skills
 
 b) next add the pop ups.
+    i) add a hover class to make it so when you hover over the skills, it shows the amount of expirence
+    ii) it will expand the box and push all of the other skill aside.
 
 
 2: add all projcts with dates and iframes with the projects or video demos of the project.

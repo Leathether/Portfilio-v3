@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Skills from "@/elements/module.tsx"
 
 export default function Home() {
   const text5xlClass:string = "text-5xl text-white font-black m-8 text-border-5xl"
@@ -7,8 +8,8 @@ export default function Home() {
   const contentClass:string = "bg-slate-300 w-[72vw] h-auto p-20"
   const skillsTextClass:string = "mt-0 text-l text-black mt-4"
   const skillsSectionImageClass:string = "flex flex-row flex-wrap justify-left"
-  const skillsImageClass:string = "h-[5rem] w-[5rem] rounded-[1rem] m-[1rem] bg-white"
-  const skillsImageStyle:Object = {height: '5rem', objectFit: 'contain', position: 'relative'}
+  const imageSrcAltList:string[][] = [["/javascriptLogo.png","JavaScript Logo"], ["/typescriptLogo.png","TypeScript Logo"], ["/appscriptLogo.png","AppScript Logo"], ["/reactLogo.png","React Logo"], ["/nextjsLogo.svg","Next JS Logo"], ["/htmlLogo.png","HTML Logo"], ["/cssLogo.svg","CSS Logo"], ["/tailwindLogo.png", "Tailwind CSS Logo"], ["/materialuiLogo.png","Material UI Logo"], ["/pythonLogo.png","Python Logo"], ["/numpyLogo.png","Numpy Logo"], ["/openaiLogo.png","Open AI Logo"], ["/geminiLogo.jpeg", "Gemini AI Logo"], ["/groqLogo.png","Groq AI Logo"], ["/llamaLogo.webp","Llama Logo"], ["/pineconeLogo.png","Pinecone Logo"], ["/pygameLogo.png","Pygame Logo"], ["/flaskapiLogo.png","Flask API Logo"], ["/cmdLogo.png","Windows CMD Logo"], ["/ubuntuLogo.png","Ubuntu Logo"], ["/linuxMintLogo.png","Linux Mint Logo"], ["/gitLogo.png","Git Logo"], ["/npmLogo.png","NPM Logo"], ["/pipLogo.png","Python pip Logo"], ["/mySqlLogo.png","My SQL Logo"]      ]
+  
   return (
     <>
       <header className="w-full flex flex-row h-auto">
@@ -24,31 +25,7 @@ export default function Home() {
           <p className={skillsTextClass}>Python, Numpy, Pandas, Matplotlib, Open AI API, Gemini API, Groq API, LLAMA 2 Local, Pinecone, Turtle, Pygame, Flask API</p>
           <p className={skillsTextClass}>Windows CMD, Ubuntu Terminal, Linux Mint, Git, NPM, pip, pyenv, MySQL</p>
           <section className={skillsSectionImageClass}>
-            <Image src="/javascriptLogo.png" alt="JavaScript Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
-            <Image src="/typescriptLogo.png" alt="TypeScript Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
-            <Image src="/appscriptLogo.png" alt="AppScript Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
-            <Image src="/reactLogo.png" alt="React Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
-            <Image src="/nextjsLogo.svg" alt="Next JS Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
-            <Image src="/htmlLogo.png" alt="HTML Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
-            <Image src="/cssLogo.svg" alt="CSS Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
-            <Image src="/tailwindLogo.png" alt="Tailwind CSS Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} />
-            <Image src="/materialuiLogo.png" alt="Material UI Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/pythonLogo.png" alt="Python Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/numpyLogo.png" alt="Numpy Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/openaiLogo.png" alt="Open AI Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/geminiLogo.jpeg" alt="Gemini AI Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/groqLogo.png" alt="Groq AI Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/llamaLogo.webp" alt="Llama Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/pineconeLogo.png" alt="Pinecone Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/pygameLogo.png" alt="Pygame Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/flaskapiLogo.png" alt="Flask API Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/cmdLogo.png" alt="Windows CMD Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/ubuntuLogo.png" alt="Ubuntu Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/linuxMintLogo.png" alt="Linux Mint Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/gitLogo.png" alt="Git Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/npmLogo.png" alt="NPM Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/pipLogo.png" alt="Python pip Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
-            <Image src="/mySqlLogo.png" alt="My SQL Logo" className={skillsImageClass} width="255" height="255" style={skillsImageStyle} /> 
+            
           </section>
           
 
