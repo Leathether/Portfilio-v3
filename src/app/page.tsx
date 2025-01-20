@@ -8,7 +8,31 @@ export default function Home() {
   const contentClass:string = 'bg-slate-300 w-[72vw] h-auto p-20'
   const skillsTextClass:string = 'mt-0 text-l text-black mt-4'
   const skillsSectionImageClass:string = 'flex flex-row flex-wrap justify-left'
-  const imageSrcAltList = [{'src':'/javascriptLogo.png','alt':'JavaScript Logo'}, {'src':'/typescriptLogo.png','alt':'TypeScript Logo'}, {'src':'/appscriptLogo.png','alt':'AppScript Logo'}, {'src':'/reactLogo.png','alt':'React Logo'}, {'src':'/nextjsLogo.svg','alt':'Next JS Logo'}, {'src':'/htmlLogo.png','alt':'HTML Logo'}, {'src':'/cssLogo.svg','alt':'CSS Logo'}, {'src':'/tailwindLogo.png', 'alt':'Tailwind CSS Logo'}, {'src':'/materialuiLogo.png','alt':'Material UI Logo'}, {'src':'/pythonLogo.png','alt':'Python Logo'}, {'src':'/numpyLogo.png','alt':'Numpy Logo'}, {'src':'/openaiLogo.png','alt':'Open AI Logo'}, {'src':'/geminiLogo.jpeg','alt': 'Gemini AI Logo'}, {'src':'/groqLogo.png','alt':'Groq AI Logo'}, {'src':'/llamaLogo.webp','alt':'Llama Logo'}, {'src':'/pineconeLogo.png','alt':'Pinecone Logo'}, {'src':'/pygameLogo.png','alt':'Pygame Logo'}, {'src':'/flaskapiLogo.png','alt':'Flask API Logo'}, {'src':'/cmdLogo.png','alt':'Windows CMD Logo'}, {'src':'/ubuntuLogo.png','alt':'Ubuntu Logo'}, {'src':'/linuxMintLogo.png','alt':'Linux Mint Logo'}, {'src':'/gitLogo.png','alt':'Git Logo'}, {'src':'/npmLogo.png','alt':'NPM Logo'}, {'src':'/pipLogo.png','alt':'Python pip Logo'}, {'src':'/mySqlLogo.png','alt':'My SQL Logo'}      ]
+  const imageSrcAltList = [{'src':'/javascriptLogo.png','alt':'JavaScript Logo','text':'Javascript: 500+ Hours'}, 
+    {'src':'/typescriptLogo.png','alt':'TypeScript Logo', 'text':'Typescript: 400+ Hours'}, 
+    {'src':'/appscriptLogo.png','alt':'AppScript Logo', 'text':'Google App Script: 20 Hours'}, 
+    {'src':'/reactLogo.png','alt':'React Logo', 'text':'React JS: 400+ Hours'}, 
+    {'src':'/nextjsLogo.svg','alt':'Next JS Logo', 'text':'Next JS: 400+ Hours'}, 
+    {'src':'/htmlLogo.png','alt':'HTML Logo','text':'HTML: 600+ Hours'}, 
+    {'src':'/cssLogo.svg','alt':'CSS Logo','text':'CSS: 600+ Hours'}, 
+    {'src':'/tailwindLogo.png', 'alt':'Tailwind CSS Logo','text':'Tailwind CSS: 300+ Hours'},
+    {'src':'/materialuiLogo.png','alt':'Material UI Logo', 'text':'Material UI: 40 Hours'}, 
+    {'src':'/pythonLogo.png','alt':'Python Logo', 'text':'Python: 500+ Hours'}, 
+    {'src':'/numpyLogo.png','alt':'Numpy Logo', 'text':'Python Numpy: 80+ Hours'}, 
+    {'src':'/openaiLogo.png','alt':'Open AI Logo', 'text':'Open AI API: 100+ Hours'}, 
+    {'src':'/geminiLogo.jpeg','alt': 'Gemini AI Logo', 'text':'Gemini API: 20+ Hours'}, 
+    {'src':'/groqLogo.png','alt':'Groq AI Logo','text':'Groq API: 60+ Hours'}, 
+    {'src':'/llamaLogo.webp','alt':'Llama Logo','text':'LLAMA AI: 80+ Hours'}, 
+    {'src':'/pineconeLogo.png','alt':'Pinecone Logo', 'text':'Pinecone API: 60+ Hours'}, 
+    {'src':'/pygameLogo.png','alt':'Pygame Logo','text':'Python Pygame: 200+ Hours'}, 
+    {'src':'/flaskapiLogo.png','alt':'Flask API Logo', 'text':'Python Flask API: 100+ Hours'}, 
+    {'src':'/cmdLogo.png','alt':'Windows CMD Logo','text':'Windows Terminal: 100+ Hours'}, 
+    {'src':'/ubuntuLogo.png','alt':'Ubuntu Logo', 'text':'Ubuntu Terminal: 100+ Hours'}, 
+    {'src':'/linuxMintLogo.png','alt':'Linux Mint Logo','text':'Linux Mint: 200+ Hours'}, 
+    {'src':'/gitLogo.png','alt':'Git Logo', 'text':'Git: 200+ Hours'}, 
+    {'src':'/npmLogo.png','alt':'NPM Logo', 'text':'NPM: 400+ Hours'}, 
+    {'src':'/pipLogo.png','alt':'Python pip Logo','text':'Python PIP: 200+ Hours'}, 
+    {'src':'/mySqlLogo.png','alt':'My SQL Logo','text':'MySQL: 100+ Hours'}      ]
   
   return (
     <>
