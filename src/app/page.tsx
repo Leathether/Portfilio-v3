@@ -1,18 +1,18 @@
-import Image from "next/image";
-import Skills from "@/elements/module.tsx"
+import Image from 'next/image';
+import Skills from '@/app/elements/Skills'
 
 export default function Home() {
-  const text5xlClass:string = "text-5xl text-white font-black m-8 text-border-5xl"
-  const textLClass:string = "text-l text-black mt-16"
-  const descriptionClass:string = "bg-blue-500 h-auto w-[28vw] flex"
-  const contentClass:string = "bg-slate-300 w-[72vw] h-auto p-20"
-  const skillsTextClass:string = "mt-0 text-l text-black mt-4"
-  const skillsSectionImageClass:string = "flex flex-row flex-wrap justify-left"
-  const imageSrcAltList:string[][] = [["/javascriptLogo.png","JavaScript Logo"], ["/typescriptLogo.png","TypeScript Logo"], ["/appscriptLogo.png","AppScript Logo"], ["/reactLogo.png","React Logo"], ["/nextjsLogo.svg","Next JS Logo"], ["/htmlLogo.png","HTML Logo"], ["/cssLogo.svg","CSS Logo"], ["/tailwindLogo.png", "Tailwind CSS Logo"], ["/materialuiLogo.png","Material UI Logo"], ["/pythonLogo.png","Python Logo"], ["/numpyLogo.png","Numpy Logo"], ["/openaiLogo.png","Open AI Logo"], ["/geminiLogo.jpeg", "Gemini AI Logo"], ["/groqLogo.png","Groq AI Logo"], ["/llamaLogo.webp","Llama Logo"], ["/pineconeLogo.png","Pinecone Logo"], ["/pygameLogo.png","Pygame Logo"], ["/flaskapiLogo.png","Flask API Logo"], ["/cmdLogo.png","Windows CMD Logo"], ["/ubuntuLogo.png","Ubuntu Logo"], ["/linuxMintLogo.png","Linux Mint Logo"], ["/gitLogo.png","Git Logo"], ["/npmLogo.png","NPM Logo"], ["/pipLogo.png","Python pip Logo"], ["/mySqlLogo.png","My SQL Logo"]      ]
+  const text5xlClass:string = 'text-5xl text-white font-black m-8 text-border-5xl'
+  const textLClass:string = 'text-l text-black mt-16'
+  const descriptionClass:string = 'bg-blue-500 h-auto w-[28vw] flex'
+  const contentClass:string = 'bg-slate-300 w-[72vw] h-auto p-20'
+  const skillsTextClass:string = 'mt-0 text-l text-black mt-4'
+  const skillsSectionImageClass:string = 'flex flex-row flex-wrap justify-left'
+  const imageSrcAltList = [{'src':'/javascriptLogo.png','alt':'JavaScript Logo'}, {'src':'/typescriptLogo.png','alt':'TypeScript Logo'}, {'src':'/appscriptLogo.png','alt':'AppScript Logo'}, {'src':'/reactLogo.png','alt':'React Logo'}, {'src':'/nextjsLogo.svg','alt':'Next JS Logo'}, {'src':'/htmlLogo.png','alt':'HTML Logo'}, {'src':'/cssLogo.svg','alt':'CSS Logo'}, {'src':'/tailwindLogo.png', 'alt':'Tailwind CSS Logo'}, {'src':'/materialuiLogo.png','alt':'Material UI Logo'}, {'src':'/pythonLogo.png','alt':'Python Logo'}, {'src':'/numpyLogo.png','alt':'Numpy Logo'}, {'src':'/openaiLogo.png','alt':'Open AI Logo'}, {'src':'/geminiLogo.jpeg','alt': 'Gemini AI Logo'}, {'src':'/groqLogo.png','alt':'Groq AI Logo'}, {'src':'/llamaLogo.webp','alt':'Llama Logo'}, {'src':'/pineconeLogo.png','alt':'Pinecone Logo'}, {'src':'/pygameLogo.png','alt':'Pygame Logo'}, {'src':'/flaskapiLogo.png','alt':'Flask API Logo'}, {'src':'/cmdLogo.png','alt':'Windows CMD Logo'}, {'src':'/ubuntuLogo.png','alt':'Ubuntu Logo'}, {'src':'/linuxMintLogo.png','alt':'Linux Mint Logo'}, {'src':'/gitLogo.png','alt':'Git Logo'}, {'src':'/npmLogo.png','alt':'NPM Logo'}, {'src':'/pipLogo.png','alt':'Python pip Logo'}, {'src':'/mySqlLogo.png','alt':'My SQL Logo'}      ]
   
   return (
     <>
-      <header className="w-full flex flex-row h-auto">
+      <header className='w-full flex flex-row h-auto'>
         <section className={descriptionClass}>
           <h1 className={text5xlClass}>Overview</h1>
         </section>
@@ -24,8 +24,9 @@ export default function Home() {
           <p className={skillsTextClass}>HTML/CSS, Tailwind CSS, Material UI</p>
           <p className={skillsTextClass}>Python, Numpy, Pandas, Matplotlib, Open AI API, Gemini API, Groq API, LLAMA 2 Local, Pinecone, Turtle, Pygame, Flask API</p>
           <p className={skillsTextClass}>Windows CMD, Ubuntu Terminal, Linux Mint, Git, NPM, pip, pyenv, MySQL</p>
-          <section className={skillsSectionImageClass}>
-            
+          <section className={skillsSectionImageClass}>{
+              imageSrcAltList.map((item,index) => (<Skills item={item} key={index}></Skills>))
+              }
           </section>
           
 
