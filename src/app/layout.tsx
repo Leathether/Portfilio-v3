@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Image from "next/image";
@@ -38,7 +37,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="bg-slate-800 h-34 w-full flex justify-center flex-row">
+        <header className="bg-[#872341] h-34 w-full flex justify-center flex-row">
           <Navigation />
         </header>
         {children}

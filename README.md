@@ -1,13 +1,22 @@
+Color scheme:
+#09122C
+#872341
+#BE3144
+#E17564
+
+
+
 Things to do for project:
 
 
 1: add all skills with pop ups that say what my skill level is in hours worked in that skill
-
+Done
 a) added all of the image skills
 Done
-    ii) Add C++ skill
+    i) Add C++ skill
     Done
 b) next add the pop ups.
+Done
     i) add a hover class to make it so when you hover over the skills, it shows the amount of expirence
     Done
        1)
@@ -19,6 +28,7 @@ b) next add the pop ups.
        add it for C++   
         Done
     iii) Make it a smooth animation
+    Done
 
 
 2: add all projcts with dates and iframes with the projects or video demos of the project.
@@ -33,3 +43,5 @@ b) next add the pop ups.
 
 
 4: add links to external social media such as github and instagram.
+
+5: add mobile and cross platform support.

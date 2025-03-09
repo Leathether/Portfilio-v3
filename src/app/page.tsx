@@ -3,9 +3,9 @@ import Skills from '@/app/elements/Skills'
 
 export default function Home() {
   const text5xlClass:string = 'text-5xl text-white font-black m-8 text-border-5xl'
-  const textLClass:string = 'text-l text-black mt-16'
-  const descriptionClass:string = 'bg-blue-500 h-auto w-[28vw] flex flex-col'
-  const contentClass:string = 'bg-slate-300 w-[72vw] h-auto p-20'
+  const textLClass:string = 'text-l text-[#FFFFFF] font-black mt-16v w-[30vw] text-center'
+  const descriptionClass:string = 'bg-[#BE3144] h-auto w-[28vw] flex flex-col'
+  const contentClass:string = 'bg-[#09122C] w-[72vw] h-auto p-20'
   const skillsTextClass:string = 'mt-0 text-l text-black mt-4'
   const skillsSectionImageClass:string = 'flex flex-row flex-wrap justify-left'
   const imageSrcAltList = [{'src':'/javascriptLogo.png','alt':'JavaScript Logo','text':'Javascript: 500+ Hours'}, 
@@ -43,9 +43,20 @@ export default function Home() {
           <Image src="/portrait.jpg" alt="Peter Magenheim" className="w-[28vw] mt-[3vw]" width="255" height="255" ></Image>
         </section>
         <section className={contentClass}>
-          <p className={textLClass}>Hello, my name is Peter Magenheim and I am a software developer. I am also a student at Mount St. Joseph Univerity studying Computer Science - Application Development with a minor in Mathematics. I currently have a job at the university where I am a developer.</p>
-          <br></br><br></br>
-
+          <section className='w-[72vw] h-auto bg-[#09122C] flex flex-row'>
+            <p className={textLClass}>Hello, my name is Peter Magenheim and I am a software developer. I am also a student at Mount St. Joseph Univerity studying Computer Science - Application Development with a minor in Mathematics. I currently have a job at the university where I am a developer.</p>
+            <section className='w-[42vw] h-auto bg-[#09122C] ml-[6vw] min-h-[16vw]'>
+              <iframe 
+                className='w-[32vw] h-[18vw]'
+                src="https://www.youtube.com/embed/oUMm0oQ_3rs"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </section>
+            <br></br><br></br>
+          </section>
           <h1 className={text5xlClass}>Skills:</h1>
           <section className={skillsSectionImageClass}>{
               imageSrcAltList.map((item,index) => (<Skills item={item} key={index}></Skills>))
