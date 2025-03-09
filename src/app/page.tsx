@@ -2,12 +2,12 @@ import Image from 'next/image';
 import Skills from '@/app/elements/Skills'
 
 export default function Home() {
-  const text5xlClass:string = 'text-5xl text-white font-black m-8 text-border-5xl'
-  const textLClass:string = 'text-l text-[#FFFFFF] font-black mt-16v w-[30vw] text-center'
-  const descriptionClass:string = 'bg-[#BE3144] h-auto w-[28vw] flex flex-col'
-  const contentClass:string = 'bg-[#09122C] w-[72vw] h-auto p-20'
+  const text5xlClass:string = 'text-[1rem] text-white font-black m-8 text-border-5xl'
+  const textLClass:string = 'text-l text-[#FFFFFF] font-black w-fit text-center'
+  const descriptionClass:string = 'bg-[#BE3144] h-auto md:w-[28vw] lg:w-[28vw] flex flex-col'
+  const contentClass:string = 'bg-[#09122C] md:w-[72vw] lg:w-[72vw] h-auto'
   const skillsTextClass:string = 'mt-0 text-l text-black mt-4'
-  const skillsSectionImageClass:string = 'flex flex-row flex-wrap justify-left'
+  const skillsSectionImageClass:string = 'justify-left grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6'
   const imageSrcAltList = [{'src':'/javascriptLogo.png','alt':'JavaScript Logo','text':'Javascript: 500+ Hours'}, 
     {'src':'/typescriptLogo.png','alt':'TypeScript Logo', 'text':'Typescript: 400+ Hours'}, 
     {'src':'/appscriptLogo.png','alt':'AppScript Logo', 'text':'Google App Script: 20 Hours'}, 
@@ -36,18 +36,18 @@ export default function Home() {
     {'src':'/cppLogo.png','alt':'C++ Logo','text':'C++: ~5 Hours'}      ]
   
   return (
-    <>
-      <header className='w-full flex flex-row h-auto'>
+    <section className='w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+      <header className='w-full flex flex-row h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
         <section className={descriptionClass}>
           <h1 className={text5xlClass}>Overview</h1>
           <Image src="/portrait.jpg" alt="Peter Magenheim" className="w-[28vw] mt-[3vw]" width="255" height="255" ></Image>
         </section>
         <section className={contentClass}>
-          <section className='w-[72vw] h-auto bg-[#09122C] flex flex-row'>
+          <section className='w-[72vw] h-auto bg-[#09122C] grid sm:grid-cols-1 lg:grid-cols-2 p-[3vw]'>
             <p className={textLClass}>Hello, my name is Peter Magenheim and I am a software developer. I am also a student at Mount St. Joseph Univerity studying Computer Science - Application Development with a minor in Mathematics. I currently have a job at the university where I am a developer.</p>
-            <section className='w-[42vw] h-auto bg-[#09122C] ml-[6vw] min-h-[16vw]'>
+            <section className='w-[68vw] bg-[#09122C]'>
               <iframe 
-                className='w-[32vw] h-[18vw]'
+                className='w-[62vw] h-[40vw] lg:w-[30vw] lg:h-[20vw] lg:ml-[2vw]'
                 src="https://www.youtube.com/embed/oUMm0oQ_3rs"
                 title="YouTube video player"
                 frameBorder="0"
@@ -66,6 +66,6 @@ export default function Home() {
 
         </section>
       </header>
-    </>
+    </section>
   )
 }
