@@ -37,6 +37,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4DZTZR1673"></script>
         <header className="bg-[#872341] h-34 w-full flex justify-center flex-row">
           <Navigation />
         </header>
