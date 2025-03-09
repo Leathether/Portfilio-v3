@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Color scheme:
+#09122C
+#872341
+#BE3144
+#E17564
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Things to do for project:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1: add all skills with pop ups that say what my skill level is in hours worked in that skill
+Done
+a) added all of the image skills
+Done
+    i) Add C++ skill
+    Done
+b) next add the pop ups.
+Done
+    i) add a hover class to make it so when you hover over the skills, it shows the amount of expirence
+    Done
+       1)
+       add it for C++
+       Done
+    ii) it will expand the box and push all of the other skill aside.
+    Done
+       1)
+       add it for C++   
+        Done
+    iii) Make it a smooth animation
+    Done
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+2: add all projcts with dates and iframes with the projects or video demos of the project.
+    i)Add links to seperate tabs
+    Done
+    ii) Add the projects to the page
 
-To learn more about Next.js, take a look at the following resources:
+    iii) Add iframes with either the link or the demo video
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3: add amimations to impress viewers.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4: add links to external social media such as github and instagram.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5: add mobile and cross platform support.

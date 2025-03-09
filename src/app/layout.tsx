@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Link from "next/link"
 import Image from "next/image";
 import Portrait from "/public/portrait.jpg";
 import "./globals.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Navigation from './components/Navigation';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,17 +37,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="bg-slate-800 h-34 w-full flex flex-row">
-          <button className="w-12 m-2 rounded-xl">
-            <Image src={Portrait} alt="By Peter Magenheim" className="w-full h-full rounded-xl" />
-          </button>
-          <button className="w-24 h-14 m-4 bg-slate-400 text-black font-black text-2xl rounded-xl content-center">Home</button>
-          <button className={buttonCSS}></button>
-          <button className={buttonCSS}></button>
-          <button className={buttonCSS}></button>
-          <button className={buttonCSS}></button>
-          <button className={buttonCSS}></button>
-          <button className="w-[3.5vw] h-[3.5vw] bg-slate-400 rounded-2xl m-2"></button>
+        <header className="bg-[#872341] h-34 w-full flex justify-center flex-row">
+          <Navigation />
         </header>
         {children}
       </body>
