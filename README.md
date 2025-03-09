@@ -35,13 +35,14 @@ Done
     i)Add links to seperate tabs
     Done
     ii) Add the projects to the page
-
+    Done
     iii) Add iframes with either the link or the demo video
-
+    Done
 
 3: add amimations to impress viewers.
 
 
 4: add links to external social media such as github and instagram.
-
+    Done
 5: add mobile and cross platform support.
+    Done
