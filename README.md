@@ -6,18 +6,18 @@ Things to do for project:
 a) added all of the image skills
 Done
     ii) Add C++ skill
-
+    Done
 b) next add the pop ups.
     i) add a hover class to make it so when you hover over the skills, it shows the amount of expirence
     Done
        1)
        add it for C++
-       
+       Done
     ii) it will expand the box and push all of the other skill aside.
     Done
        1)
        add it for C++   
-
+        Done
     iii) Make it a smooth animation
 
 

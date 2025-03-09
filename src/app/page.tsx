@@ -32,7 +32,8 @@ export default function Home() {
     {'src':'/gitLogo.png','alt':'Git Logo', 'text':'Git: 200+ Hours'}, 
     {'src':'/npmLogo.png','alt':'NPM Logo', 'text':'NPM: 400+ Hours'}, 
     {'src':'/pipLogo.png','alt':'Python pip Logo','text':'Python PIP: 200+ Hours'}, 
-    {'src':'/mySqlLogo.png','alt':'My SQL Logo','text':'MySQL: 100+ Hours'}      ]
+    {'src':'/mySqlLogo.png','alt':'My SQL Logo','text':'MySQL: 100+ Hours'},  
+    {'src':'/cppLogo.png','alt':'C++ Logo','text':'C++: ~5 Hours'}      ]
   
   return (
     <>
